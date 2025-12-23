@@ -57,7 +57,7 @@
 
 `print("Hello World")`
 
-```
+```c
 #include <stdio.h>
 int main() {
     printf("Hello World");
@@ -66,13 +66,14 @@ int main() {
 ```
 
 12. Latex
-    $E=mc^2$
-    $$
-    \begin{Bmatrix}
-    a & b \\
-    c & d
-    \end{Bmatrix}
-    $$
+
+$E=mc^2$
+$$
+\begin{Bmatrix}
+a & b \\
+c & d
+\end{Bmatrix}
+$$
 
 [^1]: FootNote
 
