@@ -69,10 +69,10 @@ int main() {
 
 $E=mc^2$
 $$
-\begin{Bmatrix}
+\begin{cases}
 a & b \\
 c & d
-\end{Bmatrix}
+\end{cases}
 $$
 
 [^1]: FootNote

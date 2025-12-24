@@ -1,5 +1,6 @@
 ## Transistor
-1. Category
+
+1. **Category**
     - BJT
     - FET
         - JFET(Junction FET)
@@ -20,7 +21,7 @@
 
 <u>以icsprout55为例</u>
 
-1. Category
+1. **Category**
     1. 逻辑门单元
         - 基本逻辑门
         - 复杂逻辑门:OAI22X1H7L
