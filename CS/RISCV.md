@@ -22,10 +22,19 @@
         - uClibc
         - musl
     - Simulators(验证程序是否能在目标平台运行)
-        - QEMU
+        - QEMU      **详情看 [QEMU.md](QEMU.md)**
         - Spike
+            - RISC-V 官方提供,专注于 RISC-V 指令集的功能验证
+            - 简单设备支持: Spike 只提供最基本的设备模型(如简单的 UART 输出),不支持复杂外设或完整系统仿真
         - Renode
+            - 主要用于嵌入式系统和物联网设备开发
+            - 多架构支持: ARM、RISC-V、PowerPC、x86 等
+            - 全系统模拟: 支持 MCU、SoC、外围设备的完整仿真
+            - 外设丰富: 提供 GPIO、UART、SPI、I2C、PWM、网络、传感器等多种设备模拟
         - Bochs
+            - x86/x86_64 全系统模拟器
+            - 全系统模拟: 完整 PC 系统，包括 BIOS、硬盘、显示、网络接口等
+            - 高度可配置: 支持不同的 x86 CPU 型号、内存大小、硬盘类型等配置
 
 3. 适用平台
     - riscv64-elf-* : 裸机,newlib
@@ -211,3 +220,7 @@ SECTIONS {
     }
 
     ```
+
+    9. 异常、中断和特权模式
+        - 看 **详情看 [QEMU.md](QEMU.md)**
+
