@@ -32,7 +32,6 @@
     - riscv64-glibc-* : Linux，glibc
 
 4. 使用方法
-
     1. riscv32-unknown-elf-gcc -march=rv32i -mabi=ilp32 -nostartfiles -g -O0 -WI,--entry=_start -WI,--Ttext=0x00400000 -WI,--Tdata=0x10010000 -o x.elf start.s main.c 
         - march=rv32i : ISA
         - mabi=ilp32 : ABI(int,long,pointer都是32位，参数通过寄存器a0-a7传递，返回值通过a0-a1传递)
@@ -58,9 +57,51 @@
     7. riscv32-unknown-elf-size x.elf
         - 打印内存占用
 
+5. 链接脚本 
+    - 内存布局:定义不同内存区域(如 ROM、RAM)的地址范围和属性
+    - 段(节区, section)分配:指定输入目标文件的节区如何合并到输出文件的节区，并分配到特定内存区域
+    - 符号处理:设置入口点、定义符号地址、处理未引用节区等
 
+```ld
+OUTPUT_ARCH(riscv)
 
+ENTRY(_start)           /* 入口 */
 
+SECTIONS {
+    
+    . = 0x00400000;     /* .text 起始地址 */
 
+    .text : {
+        *(.text)
+        *(.text.*)
+    }
 
-5. 
+    . = 0x10010000;     /* .data 起始地址 */
+
+    .data : {
+        *(.data)
+        *(.data.*)
+        *(.rodata)
+        *(.rodata.*)    
+    }
+
+    .bss : {
+        _bss_start = .;
+        *(.bss)
+        *(.bss.*)
+        *(COMMON)
+        _bss_end = .;
+    }
+}
+```
+6. ELF
+    1. readelf: 查看 ELF 结构
+        - riscv32-unknown-elf-readelf -a firmware.elf   # 查看所有段的名称、符号名和地址
+        - riscv32-unknown-elf-readelf -l firmware.elf   # 查看程序头部表
+        - riscv32-unknown-elf-readelf -S firmware.elf   # 查看节区头部表
+    2. objdump: 反汇编
+        - riscv32-unknown-elf-objdump -d firmware.elf   # 反汇编
+        - riscv32-unknown-elf-objdump -h firmware.elf   # 输出各个段的详细参数
+    3. objcopy: 制作flash固件
+        - riscv32-unknown-elf-objcopy -O binary firmware.elf firmware.bin   # 导出所有段的二进制文件
+        - riscv32-unknown-elf-objcopy -dump-sections .text=text.bin firmware.elf    # 导出代码段的二进制文件
