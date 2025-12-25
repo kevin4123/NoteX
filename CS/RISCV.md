@@ -105,3 +105,109 @@ SECTIONS {
     3. objcopy: 制作flash固件
         - riscv32-unknown-elf-objcopy -O binary firmware.elf firmware.bin   # 导出所有段的二进制文件
         - riscv32-unknown-elf-objcopy -dump-sections .text=text.bin firmware.elf    # 导出代码段的二进制文件
+
+7. 库(Library)
+    1. 运行时库(runtime library)
+        - 相关的编译选项
+            - -nostartfiles : 不使用 crt0.o 和 _start
+
+    2. C 标准库(C standard library)
+        - 相关的编译选项
+            - -ffreestanding : 不依赖标准库
+
+        - newlib
+            - 需要实现: _read、_write、_sbrk
+
+
+    3. libgcc(底层支持库：如 整数除法、浮点运算等)
+        - 相关的编译选项
+            - -nostdlib : 不使用标准库(包括libgcc和运行库)
+            - -nodefaultlibs : 不使用默认库(包括libgcc)
+        - 异常处理和信号传递
+            - 异常处理(Exception Handling)
+                - 提供对硬件异常(如非法指令、除以零)的支持
+                - try-catch 它生成了调用 libgcc 提供的栈展开（unwind）函数
+                    - 遍历调用栈
+                    - 找到匹配的 catch
+                    - 调用析构函数
+            - 信号传递
+                - 支持信号传递机制,用于处理软件中断和用户空间的信号
+        - 双精度和长整数的支持
+            - 如果硬件不支持双精度和长整数，libgcc 会模拟它们
+
+8. GCC/Clang
+    1. 选项
+        - -fno-builtin : 不使用内置函数 
+            - GCC 为了提高效率和代码优化,提供了一些内置函数,编译器直接处理生成汇编，不调用libc库函数
+            - -fno-builtin 告诉编译器,不要自动把标准库函数变成内联/汇编，严格按代码调用
+    2. 关键字
+    ```c
+    // 结构体大小为 5 字节, 无填充
+    struct __attribute__((__packed__)) Example {
+        char a;
+        int b;
+    }
+    ```
+
+    3. 内联汇编(inline assembly)
+    ```c
+    /*
+    * 1. 一句 C语言代码 = 一小段顺序执行的 汇编代码
+    * 2. 特权指令 / CSR / 控制寄存器 / 屏障指令 等, C语言 中无法直接访问
+    */
+    // CSR指令
+    #define READ_CSR(csr_no,val) \
+        asm volatile ("csrr %0, " #csr_no : "=r"(val))      // # 表示拼接
+
+    #define WRITE_CSR(csr_no,val) \
+        asm volatile ("csrw " #csr_no ", %0" :: "r"(val))
+
+    #define MEPC 0x341
+
+    int val;
+
+    READ_CSR(MEPC, val);
+    WRITE_CSR(MEPC, 0x1234);
+
+    // 屏障指令
+    asm volatile ("fence iorw, iorw");
+    ```
+
+    - 内联汇编语法
+    ```c
+    asm [volatile] (
+        "汇编指令模板"                  // %0 %1 %2 ... 是占位符
+        : 输出操作数                    // "约束"(变量)
+        : 输入操作数                    // "约束"(变量/表达式)
+        : 破坏描述（clobber）           // 列出被修改的寄存器或内存
+    );
+    ```
+
+    - 语法示例
+    ```c
+    int add(int a, int b) {
+        int result;
+        asm volatile (
+            "add %0, %1, %2"           
+            : "=r"(result)              // 输出到 result
+            : "r"(a), "r"(b)            // 输入 a 和 b
+        );
+        retrun result;
+    }
+    ```
+
+    4. 原子操作(atomic)
+    ```c
+    // 需要A扩展
+    int atomic_swap(int *ptr,int new_val){
+        int old_val;
+        asm volatile (
+            "amoswap.w.aq %0, %2, %1"   // 原子交换
+            : "=r"(old_val), "+A" (ptr) // 输出到 old_val, 输入到 ptr
+            : "r"(new_val)
+            : "memory"  // 表示内存被修改
+        )；
+        return old_val;
+    }
+
+    ```
