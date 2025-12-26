@@ -127,7 +127,6 @@ SECTIONS {
         - newlib
             - 需要实现: _read、_write、_sbrk
 
-
     3. libgcc(底层支持库：如 整数除法、浮点运算等)
         - 相关的编译选项
             - -nostdlib : 不使用标准库(包括libgcc和运行库)

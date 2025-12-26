@@ -32,12 +32,33 @@ sudo apt-get install qemu-system-misc
 ```bash
 qemu-system-riscv32 -version
 ```
-- 使用
-```bash
-qemu-system-riscv32 -machine virt -bios none -nographic -serial mon:stdio	# 开发板，串口->终端
-# 调试控制台 
-(qemu) Ctrl-A	+ C					# 启动控制台
-(qemu) info registers				# 查看寄存器
-(qemu) q							# 退出
-(qemu) info mtree					# 查看内存映射信息
-```
+- Virt Platform
+    - Cores: 多达512核, 可选扩展
+    - CLINT: (Core Local Interruptor)核心本地中断控制器
+    - PLINT：(Platform-Level Interrupt Controller)平台级本地中断控制器
+    - CFI并行NOR闪存: 用于存储固件或配置数据
+    - UART: 1 个 NS16550 兼容的 UART, 用于串行通信
+    - RTC: 1 个 Google Goldfish RTC，用于实时时钟功能
+    - VirtIO-MMIO 传输设备: 8个 VirtlO-MMIO 传输设备, 用于虚拟化环境中的设备通信
+    - PCle 主桥: 1 个通用的 PCle 主桥, 用于连接 PCle 设备s
+    - fw_cfg 设备: 允许 guest 从 QEMU 获取数据
+
+- Usage
+    1. program: qemu-system-riscv32
+    2. options
+        - -machine virt: 指定虚拟化平台
+        - -bios none: 不加载 BIOS
+        - -nographic: 不显示图形界面
+        - -serial mon:stdio: 将控制台输出重定向到标准输出
+        - -kernel <filename/kernel>: 指定运行程序/内核
+        - -d item1[,...]: 启用调试选项
+
+    3. Multiplexer Keys
+        - (qemu) Ctrl+a c: Rotate between the frontends connected to the multiplexer (usually this switches between the monitor and the console)
+        - (qemu) Ctrl+a x: Exit emulator
+        - (qemu) Ctrl+a h: Print this help
+    4. Monitor commands
+        - (qemu) info registers: Show the cpu registers
+        - (qemu) info mtree: Show memory tree
+        - (qemu) q: Quit the emulator
+        
