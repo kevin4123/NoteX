@@ -1,6 +1,7 @@
 ## QEMU
 
 1. 简介
+    - [官网](https://www.qemu.org/)
     - 全系统模拟(Full System Emulation)
     - 用户模式模拟(User Mode Emulation)
     - 支持 x86,x86_64,ARM,AArch64,RISC-V,MIPS,PowerPC 等
@@ -61,4 +62,5 @@ qemu-system-riscv32 -version
         - (qemu) info registers: Show the cpu registers
         - (qemu) info mtree: Show memory tree
         - (qemu) q: Quit the emulator
-        
+        - (qemu) info tlb: Show TLB entries
+        - 

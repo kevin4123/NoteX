@@ -9,6 +9,8 @@
     - 
 
 3. Included
-    - Editors: Emacs, nano...
-    - Software development: Automake, Bison, GCC, GDB...
-    - ...
+    - Editors: Emacs, nano
+    - Software development: Automake, Bison, Bash 
+        - Binutils(as, bfd, binutils, gprof, gprofng, ld)
+        - GCC(cpp, cppinternals, gcc, gccint, gfc-internals, gfortran, gnat-style, gnat_rm, gnat_ugn, libgomp, libiberty, libstdc++)
+        - GDB(stabs)
