@@ -2024,8 +2024,8 @@
     {
       "id": "0PZPMdepoOP-fzMZ5XO6O",
       "type": "ellipse",
-      "x": 3805.8090151832225,
-      "y": -1325.587615240188,
+      "x": 3805.8091237677686,
+      "y": -1326.773684238332,
       "width": 81.90482003348222,
       "height": 81.90482003348222,
       "angle": 0,
@@ -2043,8 +2043,8 @@
         "type": 2
       },
       "seed": 51719321,
-      "version": 87,
-      "versionNonce": 1150576569,
+      "version": 88,
+      "versionNonce": 1423732055,
       "isDeleted": false,
       "boundElements": [
         {
@@ -2056,15 +2056,15 @@
           "id": "dLGr5idbtMS7cW0SW5Bes"
         }
       ],
-      "updated": 1766886773061,
+      "updated": 1766894356828,
       "link": null,
       "locked": false
     },
     {
       "id": "dLGr5idbtMS7cW0SW5Bes",
       "type": "text",
-      "x": 3824.803698371194,
-      "y": -1297.0929320522164,
+      "x": 3824.80380695574,
+      "y": -1298.2790010503604,
       "width": 44,
       "height": 25,
       "angle": 0,
@@ -2080,11 +2080,11 @@
       "index": "awV",
       "roundness": null,
       "seed": 929254487,
-      "version": 91,
-      "versionNonce": 16844953,
+      "version": 92,
+      "versionNonce": 1806871159,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1766886773061,
+      "updated": 1766894356828,
       "link": null,
       "locked": false,
       "text": "1111",
@@ -2100,10 +2100,10 @@
     {
       "id": "sZ2EodtWl29gmzR8XrWIP",
       "type": "arrow",
-      "x": 3846.7614251999635,
+      "x": 3846.769615681967,
       "y": -1419.587615240188,
-      "width": 0,
-      "height": 88,
+      "width": 0.00010858454606932355,
+      "height": 86.81393100185596,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -2117,11 +2117,11 @@
       "index": "ax",
       "roundness": null,
       "seed": 1167345015,
-      "version": 253,
-      "versionNonce": 260601433,
+      "version": 254,
+      "versionNonce": 50611095,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1766886773061,
+      "updated": 1766894356829,
       "link": null,
       "locked": false,
       "points": [
@@ -2130,8 +2130,8 @@
           0
         ],
         [
-          0,
-          88
+          0.00010858454606932355,
+          86.81393100185596
         ]
       ],
       "lastCommittedPoint": null,
