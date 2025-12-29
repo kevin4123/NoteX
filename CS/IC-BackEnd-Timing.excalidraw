@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "6dk8YxeVyX2DNBvBG410M",
+      "type": "text",
+      "x": 338.9662524736047,
+      "y": 151.64240172017995,
+      "width": 680,
+      "height": 54,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a4",
+      "roundness": null,
+      "seed": 1908221301,
+      "version": 203,
+      "versionNonce": 1101100533,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1766974371901,
+      "link": null,
+      "locked": false,
+      "text": "复位信号可能会产生亚稳态这是不可控的，暂时还不知道如何解决这个问题，\n猜测是通过打拍的方式将异步的复位信号，传递到内部使用",
+      "fontSize": 20,
+      "fontFamily": 6,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "复位信号可能会产生亚稳态这是不可控的，暂时还不知道如何解决这个问题，\n猜测是通过打拍的方式将异步的复位信号，传递到内部使用",
+      "autoResize": true,
+      "lineHeight": 1.35
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
