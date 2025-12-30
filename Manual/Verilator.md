@@ -18,7 +18,7 @@
         - --exe: Link to create executable,defaults is create library
         - -CFLAGS <flags>: C++ compiler arguments for makefile
         - -LDFLAGS <flags>: Linker pre-object arguments for makefile
-        - 
+        - -Wno-{warning-code}: Disable warnings
 
     2. Simulation Runtime Arguments
         - +verilator+rand+reset+<value>
