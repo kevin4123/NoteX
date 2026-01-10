@@ -1,6 +1,6 @@
 ## Digital Circuit
 
-1. **Digital Circuit**
+1. **Digital Circuit 1**
     - ***模型方程 ( *Discrete System* )***
         - 定义
             $$
@@ -36,5 +36,19 @@
                 - 断流(阻止数据流向下流动)
                 - 周期延迟
                 - 异步转同步
-    - ***设计流程***
-        - $$设计_1 \xRightarrow{\text{验证 }}\; 设计_2 \xRightarrow{\text{验证 }}\; 设计_3 \xRightarrow{\text{验证 }}\; 设计_4$$
+
+2. **Digital Circuit 2**
+    - ***Communication***
+        - Latency
+        - Interface
+            - Data
+            - Control
+            - Handshake
+            - ...
+        - Protocol
+
+
+## 设计流程
+- $$设计_1 \xRightarrow{\text{验证 }}\; 设计_2 \xRightarrow{\text{验证 }}\; 设计_3 \xRightarrow{\text{验证 }}\; 设计_4$$
+- 注意**Interface Communication** 的 相关的 attribute, 约定
+- 编写 Signal 的 f(a,b,c)
