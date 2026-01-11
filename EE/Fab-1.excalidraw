@@ -30481,11 +30481,11 @@
       "index": "bR1",
       "roundness": null,
       "seed": 2071862736,
-      "version": 146,
-      "versionNonce": 1114978768,
+      "version": 147,
+      "versionNonce": 1319376847,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1767907934759,
+      "boundElements": [],
+      "updated": 1768162713436,
       "link": null,
       "locked": false,
       "points": [
@@ -30510,7 +30510,7 @@
         "gap": 6.09940277322549
       },
       "startArrowhead": null,
-      "endArrowhead": "circle",
+      "endArrowhead": "circle_outline",
       "elbowed": false
     },
     {
@@ -30538,7 +30538,7 @@
       "version": 93,
       "versionNonce": 764801840,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1767907955661,
       "link": null,
       "locked": false,
@@ -30581,7 +30581,7 @@
       "version": 66,
       "versionNonce": 131300144,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1767908029395,
       "link": null,
       "locked": false,

@@ -63,9 +63,20 @@
 5. **验证流程**
     - 周期验证: 
     - 设置$\{I\}$ -> 更新$\{全系统\}$ -> 检查$\{O\}$ -> 检查$\{{记忆}\}$ ->检查$\{线网_{Internals}\}(可选)$
-        ![Verification](Pic/Verification.png)
+        ![Verification](../Pic/Verification.png)
     - 预期对比: 
         - 预期波形, 观察实际波形
         - 预期断言, 观察实际断言(重点)
         - 预期打印, 观察实际打印
     - 参考[IC-Model-3.excalidraw](IC-Model-3.excalidraw)
+
+
+
+6. **SoC Verification**
+    - *如何验证设计好的SoC?* 
+        - FPGA上板
+        - ASIC流片
+        - SoC(verilog)--Verilator--SoC(cpp) + cpp 外设: **类似NVBoard** 
+            - 可用于验证大型SoC的逻辑功能
+        - Python SoC: 
+            - 可用于验证大型SoC的逻辑功能

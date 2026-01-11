@@ -169,7 +169,7 @@ signal: [
 
 ```wavedrom
 {
-head: {
+head: { 
     tick: 0,
 },
 signal : [

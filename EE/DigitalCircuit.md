@@ -1,5 +1,10 @@
 ## Digital Circuit
 
+**原则:**
+- Everything is a signal.
+- Use memory only for state transition, and implement everything else as pure function computation.
+- Refactor: Separate stateful transitions from pure business logic.
+
 1. **Digital Circuit 1**
     - ***模型方程 ( *Discrete System* )***
         - 定义
@@ -38,17 +43,21 @@
                 - 异步转同步
 
 2. **Digital Circuit 2**
+    - ***Transitivity***
+        - if **a** is <font color="FF0000">async</font>, then **f(a)** is <font color="FF0000">async</font> 
+        - if **a** changes, then **f(a)** changes
+
     - ***Communication***
         - Latency
-        - Interface
-            - Data
-            - Control
-            - Handshake
-            - ...
-        - Protocol
-
-
-## 设计流程
-- $$设计_1 \xRightarrow{\text{验证 }}\; 设计_2 \xRightarrow{\text{验证 }}\; 设计_3 \xRightarrow{\text{验证 }}\; 设计_4$$
-- 注意**Interface Communication** 的 相关的 attribute, 约定
-- 编写 Signal 的 f(a,b,c)
+        - Protocol + Interface
+            - Data{ data[7:0]-> }
+            - Control{ valid-> }
+            - Handshake{ valid->, ready<- }
+            - Status{ overflow-> }
+            - Interrupt{ ... }
+            - Coherence{ ... }
+            - Configuration{ ... }
+            - Debug{ ... }
+            - Arbitration{ ... }
+            - Sideband{ ... }
+            - Power{ ... }
