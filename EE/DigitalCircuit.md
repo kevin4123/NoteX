@@ -23,7 +23,7 @@
             Signals &= F(System) \\
             \end{cases}
             $$
-        - 离散输入驱动模型 ( *Discrete Input Driver Model* )
+        - 离散事件模型 ( *Discrete Event Model* )
             $$\{Trigger, I\}\ \text{运动} \;\Rightarrow\; \{System\}\ \text{运动}$$
     - ***亚稳态来源***
         - 基础: 
