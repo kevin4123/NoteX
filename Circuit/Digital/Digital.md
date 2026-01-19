@@ -1,11 +1,11 @@
-## Digital Circuit
+## Digital
 
 **原则:**
 - Everything is a signal.
 - Use memory only for state transition, and implement everything else as pure function computation.
 - Refactor: Separate stateful transitions from pure business logic.
 
-1. **Digital Circuit 1**
+1. **Digital 1**
     - ***模型方程 ( *Discrete System* )***
         - 定义
             $$
@@ -42,7 +42,7 @@
                 - 周期延迟
                 - 异步转同步
 
-2. **Digital Circuit 2**
+2. **Digital 2**
     - ***Transitivity***
         - if **a** is <font color="FF0000">async</font>, then **f(a)** is <font color="FF0000">async</font> 
         - if **a** changes, then **f(a)** changes

@@ -1,0 +1,13 @@
+## Category
+- BJT
+- FET
+    - JFET(Junction FET)
+    - MOSFET(Metal-Oxide-Semiconductor FET)
+        - Enhancement
+        - Depletion
+    - Special FETs
+        - HEMT(High Electron Mobility)
+        - MESFET(Microwave FET)
+        - FinFET(Advanced IC)           (营销术语:5nm)
+        - GAAFET(Advanced IC)(20-30nm)  (营销术语:3nm)
+        - TFET(Tunnel FET)

@@ -317,12 +317,7 @@
       "version": 3352,
       "versionNonce": 1213916515,
       "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "IYrpfhLOm1At14kXk4VFt",
-          "type": "arrow"
-        }
-      ],
+      "boundElements": [],
       "updated": 1767933874744,
       "link": null,
       "locked": false,
