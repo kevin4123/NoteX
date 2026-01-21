@@ -1,12 +1,5 @@
-## Verilog-Simulation
 
-1. ***简介***
-    - IEEE Std 1364™-2005
-    - 
-
-2. ***Scheduling semantics***
-    - [Scheduling semantics](https://vlsiverify.com/verilog/verilog-scheduling-semantics/)
-
+***Scheduling semantics***
 ```c
 while (there are events) {
     if (no active events) { 

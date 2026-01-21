@@ -1,19 +1,5 @@
 ## PDK
 
-<u>以icsprout55为例</u>
-
-1. **ics55_LLSC_H7C_V1p10C100        (naming convention)** 
-```yaml
-LVT                     ->  低阈值电压(Low Vt)
-HVT                     ->  (高 Vt，省电慢)
-SVT                     ->  (平衡)
-ics55                   ->  ICsprout55
-LLSC                    ->  Low Leakage Standard Cell
-H7                      ->  表示标准单元的高度为7个轨道
-C                       ->  表示大版本号
-V1p10C100               ->  表示具体的小版本
-```
-
 2. **标准单元的命名:功能+驱动能力+H+轨道数+阈值电压**
 
 <pre>
@@ -34,10 +20,6 @@ OR3X0P5H7R
 
 3. **PDK files**
 ```yaml
-- .lib                    ->  标准单元模型(功能,时序,功耗和PPA等)
-- .v                      ->  行为模型
-- ics55_LLSC_H7CL/.lef    ->  物理模型
-- prtech/techLEF/.lef     ->  工艺规范
 - .cdl                    ->  晶体管信息
 ```
 

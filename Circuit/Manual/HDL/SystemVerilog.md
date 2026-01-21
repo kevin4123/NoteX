@@ -1,12 +1,3 @@
-## SystemVerilog
-***简介***
-- IEEE Std 1800™-2017(encompass the IEEE 1364-2005 reference model for simulation)
-- used to **Hardware Design** and **Verification** 
-- [Reference](https://vlsiverify.com/system-verilog/systemverilog-scheduling-semantics/)
-- [SystemVerilog in 5 Minutes Series](https://www.youtube.com/playlist?list=PL40xmtPvboRs6Ng_1Q_V-1MdJH50A6Ulz)
-- [UVM](https://www.youtube.com/playlist?list=PL40xmtPvboRuqPCMezg_59uObtLIJvJw7)
----
-
 ***Scheduling semantics***
 ```c
 execute_simulation {
