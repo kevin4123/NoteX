@@ -47,15 +47,17 @@
 
 - ***Communication***
     - Latency
-    - Protocol + Interface
-        - Data{ data[7:0]-> }
-        - Control{ valid-> }
-        - Handshake{ valid->, ready<- }
-        - Status{ overflow-> }
-        - Interrupt{ ... }
-        - Coherence{ ... }
-        - Configuration{ ... }
-        - Debug{ ... }
-        - Arbitration{ ... }
-        - Sideband{ ... }
-        - Power{ ... }
+    - Interface
+        - Data{}
+        - Control{}
+        - Handshake{}
+        - Status{}
+        
+        - Flow{}
+        - Interrupt{}
+        - Coherence{}
+        - Configuration{}
+        - Debug{}
+        - Arbitration{}
+        - Sideband{}
+        - Power{}
