@@ -13,3 +13,7 @@
 ℕ:Set of natural numbers
 ℤ:Set of integers
 ℝ:Set of real numbers
+
+Zn²⁺
+▓
+zz²
