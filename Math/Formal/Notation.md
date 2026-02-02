@@ -15,5 +15,3 @@
 ℝ:Set of real numbers
 
 Zn²⁺
-▓
-zz²
