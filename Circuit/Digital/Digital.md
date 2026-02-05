@@ -52,7 +52,6 @@
         - Control{}
         - Handshake{}
         - Status{}
-        
         - Flow{}
         - Interrupt{}
         - Coherence{}
