@@ -8,6 +8,6 @@
     - Special FETs
         - HEMT(High Electron Mobility)
         - MESFET(Microwave FET)
-        - FinFET(Advanced IC)           (营销术语:5nm)
-        - GAAFET(Advanced IC)(20-30nm)  (营销术语:3nm)
+        - FinFET(Advanced IC)           (营销术语:3nm)
+        - GAAFET(Advanced IC)(20-30nm)  (营销术语:2nm)
         - TFET(Tunnel FET)
