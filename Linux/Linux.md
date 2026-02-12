@@ -8,7 +8,7 @@ https://www.kernel.org/         内核
 ```bash
 cat /etc/os-release             # 查看发行版名称和版本
 echo $SHELL                     # 查看 shell
-
+sudo dmesg                      # print or control the kernel ring buffer: 显示全部内核日志
 ```
 
 ## NetWork
