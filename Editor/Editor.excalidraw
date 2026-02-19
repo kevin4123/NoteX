@@ -1,0 +1,100 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "2frBlImdrSiqrXn6lBFHC",
+      "type": "text",
+      "x": 530.5183715820312,
+      "y": 243.50001525878906,
+      "width": 297,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 493328118,
+      "version": 29,
+      "versionNonce": 1140387894,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1771488525484,
+      "link": null,
+      "locked": false,
+      "text": "15 分钟讲解所有代码编辑器/IDE",
+      "fontSize": 20,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "15 分钟讲解所有代码编辑器/IDE",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "DXGSEweTu7jCrUVPhoazL",
+      "type": "image",
+      "x": 452.6666564941406,
+      "y": 226.00003051757815,
+      "width": 60,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "transparent",
+      "backgroundColor": "#1e1e1e",
+      "fillStyle": "solid",
+      "strokeWidth": 4,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a1",
+      "roundness": null,
+      "seed": 1715326570,
+      "version": 1435,
+      "versionNonce": 1982536810,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1771488538898,
+      "link": null,
+      "locked": false,
+      "status": "pending",
+      "fileId": "ee0e0ff73e6225d74a3ba68a1959681ab276aae3",
+      "scale": [
+        1,
+        1
+      ],
+      "crop": null
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {
+    "ee0e0ff73e6225d74a3ba68a1959681ab276aae3": {
+      "mimeType": "image/png",
+      "id": "ee0e0ff73e6225d74a3ba68a1959681ab276aae3",
+      "dataURL": "data:image/png;base64,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",
+      "created": 1764088844318,
+      "size": {
+        "height": 100,
+        "width": 100
+      },
+      "hasSVGwithBitmap": false,
+      "shouldScale": true,
+      "pdfPageViewProps": null
+    }
+  }
+}
