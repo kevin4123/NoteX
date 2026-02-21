@@ -32,4 +32,20 @@ Subscript:
 ₊ ₋ ₌ ₍ ₎
 ₔ
 ```
+========================================
+∑:Summation
+$$\sum_{k=1}^{n} f(k)$$
+```c
+long long sum = 0;
+for (int k = 1; k <= n; k++) {
+    sum += f(k);
+}
+```
+lim: limit
+$$\lim_{x \to a} f(x) = L$$
+```
+mean: As you approach a along the x-axis, f(x) value close to L
+```
+========================================
+
 
