@@ -14,3 +14,6 @@
         - Binutils(as, bfd, binutils, gprof, gprofng, ld)
         - GCC(cpp, cppinternals, gcc, gccint, gfc-internals, gfortran, gnat-style, gnat_rm, gnat_ugn, libgomp, libiberty, libstdc++)
         - GDB(stabs)
+
+4. Doc
+    [GNU C Reference](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
