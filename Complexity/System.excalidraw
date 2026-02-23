@@ -8047,6 +8047,92 @@
       "originalText": "人类社会的发展带来了下水道生态系统，人鼠共存，这就是系统变化带来的变革",
       "autoResize": true,
       "lineHeight": 1.25
+    },
+    {
+      "id": "RaiVWfa1e-UOB4jvWcC_v",
+      "type": "arrow",
+      "x": 1225.849459232664,
+      "y": 2324.770762903283,
+      "width": 0,
+      "height": 534.0051077886328,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b65",
+      "roundness": null,
+      "seed": 1253041738,
+      "version": 178,
+      "versionNonce": 294113866,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "pa1lUd8_JP4tR4zIyKFO-"
+        }
+      ],
+      "updated": 1771831661143,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -534.0051077886328
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "pa1lUd8_JP4tR4zIyKFO-",
+      "type": "text",
+      "x": 1085.182711185789,
+      "y": 1945.2682090089666,
+      "width": 220,
+      "height": 225,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b66",
+      "roundness": null,
+      "seed": 489721098,
+      "version": 203,
+      "versionNonce": 2083322070,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1771831658642,
+      "link": null,
+      "locked": false,
+      "text": "编程语言的包装\n硬件电路的包装\n\n也可以理解成层级的上升\n\n随着你层级的上升你可以\n用的工具也就越来越多，\n你可以用这些工具组合成\n更多的功能满足你的需求",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "RaiVWfa1e-UOB4jvWcC_v",
+      "originalText": "编程语言的包装\n硬件电路的包装\n\n也可以理解成层级的上升\n\n随着你层级的上升你可以用的工具也就越来越多，你可以用这些工具组合成更多的功能满足你的需求",
+      "autoResize": true,
+      "lineHeight": 1.25
     }
   ],
   "appState": {
