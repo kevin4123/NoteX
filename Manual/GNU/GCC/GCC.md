@@ -7,9 +7,8 @@
     - GCC(cpp, cppinternals, gcc, gccint, gfc-internals, gfortran, gnat-style, gnat_rm, gnat_ugn, libgomp, libiberty, libstdc++)
 
 2. gcc
-    1. Options
-        - 
-    2. Common-Function-Attributes
+    - Options
+    - Common-Function-Attributes
         ```c
         // 指定函数 section
         __attribute__ ((section("section-name"))) 
@@ -18,6 +17,11 @@
         * 函数体中写 Basic Asm, 相当于 内联汇编 
         */
         __attribute__ ((naked))
+        ```
+    - Common Variable Attributes
+        ```c
+        // variable must be emitted even if it appears that the variable is not referenced
+        __attribute__((used))
         ```
 
 3. cpp
