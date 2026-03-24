@@ -2,7 +2,7 @@
 
 ### Documents
 
-[riscv-unified-db](https://riscv-software-src.github.io/riscv-unified-db/)
+[riscv-unified-db]()
 [RISC-V Non-ISA Specifications](https://github.com/riscv-non-isa)
 
 ### ToolChain
