@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "hMGtqUfhadq7N8c7A3Os6",
+      "type": "text",
+      "x": 277.7594299316406,
+      "y": 257.8333740234375,
+      "width": 669.814453125,
+      "height": 75,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 2127797584,
+      "version": 16,
+      "versionNonce": 279882576,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1776876806429,
+      "link": null,
+      "locked": false,
+      "text": "锻炼自己解决问题的能力 ，去解决问题那个笔记上 ，思考世界上的一些问\n题，可以是已经解决的，也可以是没有解决的，尝试分析并给出解决方案,\n把这个变成我的日常routine，这个能力可以让我找到商机",
+      "fontSize": 20,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "锻炼自己解决问题的能力 ，去解决问题那个笔记上 ，思考世界上的一些问题，可以是已经解决的，也可以是没有解决的，尝试分析并给出解决方案, 把这个变成我的日常routine，这个能力可以让我找到商机",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
