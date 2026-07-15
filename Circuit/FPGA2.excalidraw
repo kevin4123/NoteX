@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "NRdq_h0qSu_7nRy_Ywted",
+      "type": "text",
+      "x": -4.098212120245535,
+      "y": -1106.6369304081873,
+      "width": 253,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "bvh",
+      "roundness": null,
+      "seed": 282105522,
+      "version": 22,
+      "versionNonce": 1286510834,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1782739132628,
+      "link": "https://www.youtube.com/watch?v=m-8G1Yixb34",
+      "locked": false,
+      "text": "The History of the FPGA",
+      "fontSize": 20,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "The History of the FPGA",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
